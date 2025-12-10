@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин взуття</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<header class="navbar">
+  <div class="container">
+    <a href="#" class="logo">ShoeStore</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Каталог</a>
+          <ul class="dropdown">
+            <li><a href="#">Чоловіче</a></li>
+            <li><a href="#">Жіноче</a></li>
+            <li><a href="#">Дитяче</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<section class="welcome container">
+  <div class="col big">
+    <h2>Ласкаво просимо!</h2>
+    <p>Магазин взуття для всієї родини. Якість і комфорт за доступною ціною.</p>
+  </div>
+  <div class="col medium">
+    <h3>Акції</h3>
+    <p>До -50% на літнє взуття!</p>
+  </div>
+  <div class="col small">
+    <h4>Новинки</h4>
+    <p>Колекція 2025 вже у продажу!</p>
+  </div>
+</section>
+
+<section class="products container">
+  <h2>Наші товари</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="1(1).jpg" alt="Чоловіче взуття">
+      <h3>Чоловічі кросівки</h3>
+      <p>Стильні та комфортні для активного способу життя.</p>
+      <button>Детальніше</button>
+    </div>
+    <div class="card">
+      <img src="2.jpg" alt="Жіноче взуття">
+      <h3>Жіночі туфлі</h3>
+      <p>Елегантні моделі для будь-якої події.</p>
+      <button>Детальніше</button>
+    </div>
+    <div class="card">
+      <img src="3.jpg" alt="Дитяче взуття">
+      <h3>Дитячі черевики</h3>
+      <p>Надійність і комфорт для дітей.</p>
+      <button>Детальніше</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="order container">
+  <h2>Замовлення</h2>
+  <form>
+    <input type="text" placeholder="Ваше ім'я" required>
+    <input type="email" placeholder="Ваш Email" required>
+    <select>
+      <option>Оберіть товар</option>
+      <option>Чоловічі кросівки</option>
+      <option>Жіночі туфлі</option>
+      <option>Дитячі черевики</option>
+    </select>
+    <button type="submit">Замовити</button>
+  </form>
+</section>
+
+</body>
+</html>

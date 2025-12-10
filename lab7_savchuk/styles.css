@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.container {
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px grey;
+    position: relative;
+}
+.block1, .block2, .block3, .block4, .block5 {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.block1, .block3 {
+    width: 100%;
+    height: 50px;
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.middle {
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+.block2 {
+    width: 25%;
+    height: 100%;
+    background-color: #ffca28;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 10px;
+}
+.block4 {
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    overflow: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+.block5 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 75%;
+    height: 40px;
+    background-color: #ffca28;
+    text-align: center;
+    line-height: 40px;
+    transform: rotate(5deg); /* Поворот блока */
+    z-index: 1;
+    font-weight: bold;
+}

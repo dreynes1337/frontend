@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f7fa;
+  }
+  
+  header, footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 80px 1fr 60px; 
+    gap: 10px; 
+    grid-template-areas: 
+      "header header header"
+      "menu main sidebar"
+      "footer footer footer"; 
+    padding: 20px;
+  }
+  
+
+  
+  .item {
+    background: white;
+    border: 2px solid #00796b;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+ 
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: sidebar; }
+  .item5 { grid-area: footer; }
+  
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-areas: 
+        "header"
+        "menu"
+        "main"
+        "sidebar"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  /* Загальні стилі */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Навігація */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links li {
+    position: relative;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-links li:hover .dropdown {
+    display: block;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    background: #555;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown li a {
+    display: block;
+    padding: 10px;
+  }
+  
+  /* Вітальний блок */
+  .welcome {
+    display: flex;
+    margin: 2rem 0;
+  }
+  .welcome .col {
+    padding: 1rem;
+  }
+  .big {
+    flex: 2;
+    background-color: #f4f4f4;
+  }
+  .medium {
+    flex: 1.5;
+    background-color: #ddd;
+  }
+  .small {
+    flex: 1;
+    background-color: #bbb;
+  }
+  
+  /* Слайдер */
+  .slider {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: none;
+  }
+  .slide.active {
+    display: block;
+  }
+  
+  /* Картки товарів */
+  .products {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .card-grid {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: #f9f9f9;
+    padding: 1rem;
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .card img {
+    max-width: 100%;
+  }
+  .card button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+  }
+  .card button:hover {
+    background: #555;
+  }
+  
+ 
+  .order {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .order form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .order input, .order select {
+    padding: 10px;
+    width: 300px;
+  }
+  .order button {
+    padding: 10px 20px;
+    background: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .order button:hover {
+    background: blue;
+  }
+  
+
+  @media (max-width: 768px) {
+    .welcome {
+      flex-direction: column;
+    }
+    .card-grid {
+      flex-direction: column;
+    }
+  }
+  

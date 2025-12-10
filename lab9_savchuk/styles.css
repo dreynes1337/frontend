@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.block {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.block1 {
+    background-color: dodgerblue;
+    height: 50px;
+}
+
+
+.middle {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+
+.block2 {
+    background-color: gold;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.column-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.block5 {
+    background-color: gold;
+    height: 40px;
+}
+
+
+.block4 {
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px;
+}
+
+
+.block3 {
+    background-color: dodgerblue;
+    height: 50px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .middle {
+        flex-direction: column;
+    }
+    .block2 {
+        width: 100%;
+        height: 70px;
+    }
+    .column-right {
+        flex-direction: column;
+    }
+}
+
+
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        border: none;
+        display: block;
+    }
+    .block {
+        background: none;
+        color: black;
+        page-break-inside: avoid;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'MyLobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype');
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'MyLobster', cursive;
+}
+
+

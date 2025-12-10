@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar top"
+        "sidebar content"
+        "footer footer";
+    grid-template-rows: 50px 40px 1fr 50px;
+    grid-template-columns: 100px 1fr;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px grey;
+}
+.block1 {
+    grid-area: header;
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.block2 {
+    grid-area: sidebar;
+    background-color: #ffca28;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.block3 {
+    grid-area: footer;
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.block4 {
+    grid-area: content;
+    background-color: white;
+    padding: 10px;
+    overflow: auto;
+    font-size: 14px;
+}
+.block5 {
+    grid-area: top;
+    background-color: #ffca28;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    transform: rotate(2deg);
+}
+
+
+ .container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar top"
+        "sidebar content"
+        "footer footer";
+    grid-template-rows: 50px 40px 1fr 50px;
+    grid-template-columns: 100px 1fr;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px grey;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "top"
+            "sidebar"
+            "content"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 40px 70px 1fr 50px;
+        width: 90%;
+        height: auto;
+    }
+    .block2 {
+        padding: 20px 0;
+    }
+    .block4 {
+        font-size: 16px;
+    }
+}
+
+
+@media print {
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        border: none;
+        display: block;
+    }
+    .block1, .block2, .block3, .block4, .block5 {
+        page-break-inside: avoid;
+        margin: 10px 0;
+        background: none;
+        color: black;
+    }
+}

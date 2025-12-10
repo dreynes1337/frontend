@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header, nav, main, section, article, aside, footer {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+
+section {
+    background-color: #f9f9f9;
+}
+
+aside {
+    background-color: #e0f7fa;
+}
+
+
+blockquote {
+    font-style: italic;
+    margin: 20px;
+    quotes: "«" "»" "„" "“";
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+}
+
+
+header, nav, main, section, article, aside, footer {
+    margin: 10px;
+    padding: 10px;
+    outline: 2px dashed #90caf9; 
+    border-radius: 15px; 
+    resize: both; 
+    overflow: auto;
+    cursor: pointer; 
+    background: radial-gradient(circle at center, #ffffff, #e0f7fa);
+    text-shadow: 1px 1px 2px #aaa; 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: underline dotted #00796b; 
+}
+
+
+section {
+    background: linear-gradient(to bottom, #ffffff, #b2ebf2);
+}
+
+aside {
+    background: radial-gradient(circle, #e0f7fa, #b2ebf2);
+}
+
+
+blockquote {
+    font-style: italic;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f4c3;
+    quotes: "«" "»" "„" "“";
+    border-left: 5px solid #c0ca33;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 8px solid transparent;
+    border-image-source: url('images/border.png'); 
+    border-image-slice: 30;
+    border-image-width: 10px;
+    border-image-outset: 5px;
+    border-image-repeat: round;
+    border-image: url('images/border.png') 30 round;
+}
+
+
+input, textarea {
+    caret-color: #ff5722; 
+}
+
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    font-size: 0.9em;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #42a5f5, #ab47bc) 1; 
+    text-shadow: 1px 1px 2px #666;
+}

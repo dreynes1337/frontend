@@ -1,0 +1,284 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header, nav, main, section, article, aside, footer {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+
+section {
+    background-color: #f9f9f9;
+}
+
+aside {
+    background-color: #e0f7fa;
+}
+
+
+blockquote {
+    font-style: italic;
+    margin: 20px;
+    quotes: "«" "»" "„" "“";
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+}
+
+
+header, nav, main, section, article, aside, footer {
+    margin: 10px;
+    padding: 10px;
+    outline: 2px dashed #90caf9; 
+    border-radius: 15px; 
+    resize: both; 
+    overflow: auto;
+    cursor: pointer; 
+    background: radial-gradient(circle at center, #ffffff, #e0f7fa);
+    text-shadow: 1px 1px 2px #aaa; 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: underline dotted #00796b; 
+}
+
+
+section {
+    background: linear-gradient(to bottom, #ffffff, #b2ebf2);
+}
+
+aside {
+    background: radial-gradient(circle, #e0f7fa, #b2ebf2);
+}
+
+
+blockquote {
+    font-style: italic;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f4c3;
+    quotes: "«" "»" "„" "“";
+    border-left: 5px solid #c0ca33;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 8px solid transparent;
+    border-image-source: url('images/border.png'); 
+    border-image-slice: 30;
+    border-image-width: 10px;
+    border-image-outset: 5px;
+    border-image-repeat: round;
+    border-image: url('images/border.png') 30 round;
+}
+
+
+input, textarea {
+    caret-color: #ff5722; 
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    font-size: 0.9em;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #42a5f5, #ab47bc) 1; 
+    text-shadow: 1px 1px 2px #666;
+}
+
+header, nav, main, section, article, aside, footer {
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover {
+    background-color: #b2ebf2;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+img {
+    transition: transform 0.6s ease-in-out, opacity 0.4s ease;
+}
+
+
+img:hover {
+    transform: rotate(3deg) scale(1.05);
+    opacity: 0.9;
+}
+
+nav ul li a {
+    color: #00796b;
+    transition: color 0.4s linear;
+}
+
+nav ul li a:hover {
+    color: #004d40;
+}
+
+
+header h1, section h2, article h3, aside h2, footer p {
+    transition: text-shadow 0.5s ease;
+}
+
+header h1:hover, section h2:hover, article h3:hover, aside h2:hover, footer p:hover {
+    text-shadow: 2px 2px 5px #333;
+}
+
+
+header {
+    transform: matrix(1, 0.2, 0.2, 1, 0, 0); 
+    transition: transform 0.5s ease-in-out;
+}
+
+
+header:hover {
+    transform: matrix(1, -0.2, 0.2, 1, 0, 0);
+}
+
+
+aside {
+    transform: skew(10deg, 5deg);
+    transition: transform 0.5s ease;
+}
+
+
+aside:hover {
+    transform: skew(-10deg, -5deg);
+}
+
+img {
+    transform-origin: top left;
+    transition: transform 0.5s ease;
+}
+
+
+img:hover {
+    transform: rotate(5deg) scale(1.1) skew(2deg, 2deg);
+}
+
+
+.button, .special-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.button:hover, .special-link:hover {
+    transform: scale(1.2) rotate(10deg);
+    background-color: #388e3c;
+}
+
+
+
+.collection {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.card {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    background: linear-gradient(to bottom, #fff, #e0f7fa);
+    border: 2px solid #81d4fa;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    perspective: 1000px; 
+    transition: transform 0.8s ease;
+}
+
+
+.card:hover {
+    transform: rotateZ(10deg) scale(1.05);
+}
+
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.card:hover img {
+    transform: rotateZ(-5deg) scale(1.1);
+}
+
+
+.card p {
+    margin: 10px;
+    font-size: 18px;
+    color: #00796b;
+}
+
